@@ -51,13 +51,6 @@ public class LoginFacebookTest {
 		String noPass = driver.findElement(By.xpath("//*[@id=\"globalContainer\"]/div[3]/div/div/div")).getText();
 		assertTrue(noPass.contains("La contraseña que ingresaste es incorrecta. "));
 		
-		//si funciona pero no agarra el mensaje popup
-		//String str2 = driver.findElement(By.name("login")).getText();
-		//assertTrue(str2.contains("Iniciar Sesión"));
-		
-		//String buttonLogin = driver.findElement(By.id("loginbutton")).getText();
-		//assertTrue(buttonLogin.contains("Iniciar sesión"));
-		
 		pause(6000);
 		
 		driver.close();
