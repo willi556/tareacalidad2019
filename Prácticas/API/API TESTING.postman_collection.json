@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "02d54877-6243-4fde-83c6-6d07b9f3f0b9",
+		"name": "API TESTING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mern-crud.herokuapp.com/api/users/5dcb5701eff2350012ec65b6",
+					"protocol": "https",
+					"host": [
+						"mern-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"5dcb5701eff2350012ec65b6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t    \"name\": \"WILLIAM\",\r\n\t    \"email\": \"WILLIAMBALANHERNANDEZ@GMAIL.COM\",\r\n\t    \"age\": 21,\r\n\t    \"gender\": \"m\"\r\n}"
+				},
+				"url": {
+					"raw": "https://mern-crud.herokuapp.com/api/users/",
+					"protocol": "https",
+					"host": [
+						"mern-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://mern-crud.herokuapp.com/api/users/5dcb5dceeff2350012ec65d4",
+					"protocol": "https",
+					"host": [
+						"mern-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"5dcb5dceeff2350012ec65d4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
